@@ -15,6 +15,34 @@
     </head>
     <body style="max-width: 800px; margin: auto;">
         
+<!---------------------------------------------------MODAL----------------------------------------------------------------->
+        
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <div id="meet"class="container text-center" style="height: 950px;"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+        
+<!---------------------------------------------------PAGE----------------------------------------------------------------->
+        
         <ul class="nav justify-content-center mt-3" style="align-items: flex-start;">
             <img src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
         </ul>
@@ -95,16 +123,19 @@
                 <b>Группы взаимопомощи и групповой психотерапии</b>
             </div>
             <div class="card-body">
-                <h5 class="card-title">Хотите принять участие в групповых занятиях?</h5>
+                <h4 class="card-title">Хотите принять участие в групповых занятиях?</h4>
                 <ul class="list-group justify-content-center p-2">
                     <li class="list-group-item list-group-item-info">
-                        Перейдите по одной из кнопок и заполните форму участника. Ожидайте подключения к группе, это может занимать до нескольких дней.
+                        Перейдя по одной из кнопок, подключитесь к онлайн встрече или оставьте контакты для уведомления о встрече. Ожидайте подключения к группе, это может занимать до нескольких дней.
                         Групповые встречи проводяться в формате видео-конференций.
                     </li>
                 </ul>
+                 
                 <div class="p-2 d-flex"> 
+                    <h5 class="card-title">Группа совершенствования личности</h5>
+                    <button type="button" class="btn flex-grow-1 btn-lg btn-info" data-dismiss="modal">Подключиться</button>
                     <a type="button" class="btn flex-grow-1 btn-lg btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Совершенствование личности
+                        Подписаться
                     </a>
                 </div>
                 <p>Участники – здоровые личности, стремящиеся с помощью группового опыта лучше познать себя, завязать более тесные отношения с другими людьми, усовершенствовать навыки межличностного общения, найти и устранить препятствия, мешающие реализации своих возможностей. Наиболее характерными видами данного типа групп являются группы встреч и тренинговые группы.</p>
@@ -198,7 +229,7 @@
                             <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5287390709344743240.jpg?alt=media&token=97" alt="Card image" />
                             <h4 class="card-title">Ольга Капица</h4>
                             <p class="card-text">Психолог, клиент-центрированный терапевт</p>
-                            <p class="card-text">Telegram <b>@olga_kapitsa</b></p>
+                            <p class="card-text">Telegram<b>@olga_kapitsa</b></p>
                             <a target="_top" href="https://www.instagram.com/olga.kapitsa/" class="btn btn-link">Instagram</a>
                             <a target="_top" href="https://www.instagram.com/sny.dnipro/" class="btn btn-link">Blog</a>
                             <a target="_top" href="http://www.linkedin.com/in/olga-kapitsa/" class="btn btn-link">LinkedIn</a>
@@ -286,7 +317,7 @@
         <div class="row m-2 mt-3 text-center">
             <h2>Оставайтесь с нами</h2>
         </div>
-        <div id="meet"class="container text-center"></div>
+        
 
         <!-- Example row of columns -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true" width="100%" height="970em" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
