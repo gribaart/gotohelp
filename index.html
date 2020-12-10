@@ -17,6 +17,7 @@
                 
           
           document.addEventListener("load", function(){
+              conosle.log("load");
             const domain = 'meet.jit.si';
                 const options = {
                     roomName: 'gotohelpstream',
@@ -33,11 +34,13 @@
                  for ( var i = 0; i < length; i++ ) {
                     result += characters.charAt(Math.floor(Math.random() * charactersLength));
                  }
+                conosle.log(result);
                  return result;
               }
             
               Array.from(document.getElementsByClassName("hash")).forEach(
                   function(element, index, array) {
+                      conosle.log("array");
                       element.href += makeid(7);
                   }
               );
