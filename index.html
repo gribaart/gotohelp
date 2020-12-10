@@ -12,41 +12,6 @@
 
         <script src='https://meet.jit.si/external_api.js'></script>
         <title>GotoHelp.eu</title>
-        <script>
-        
-                
-          
-          document.addEventListener("load", function(){
-              console.log("load");
-            const domain = 'meet.jit.si';
-                const options = {
-                    roomName: 'gotohelpstream',
-                    width: 700,
-                    height: 700,
-                    parentNode: document.getElementById('meet')
-                };
-                const api = new JitsiMeetExternalAPI(domain, options);  
-              
-            function makeid(length) {
-                 var result           = '';
-                 var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                 var charactersLength = characters.length;
-                 for ( var i = 0; i < length; i++ ) {
-                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                 }
-                console.log(result);
-                 return result;
-              }
-            
-              Array.from(document.getElementsByClassName("hash")).forEach(
-                  function(element, index, array) {
-                      console.log("array");
-                      element.href += makeid(7);
-                  }
-              );
-            
-             });
-        </script>
     </head>
     <body style="max-width: 800px; margin: auto;">
         
@@ -341,5 +306,37 @@
 
         <!-- Option 1: Bootstrap Bundle with Popper.js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+        <script>
+          document.onload = function(){
+              console.log("load");
+            const domain = 'meet.jit.si';
+                const options = {
+                    roomName: 'gotohelpstream',
+                    width: 700,
+                    height: 700,
+                    parentNode: document.getElementById('meet')
+                };
+                const api = new JitsiMeetExternalAPI(domain, options);  
+              
+            function makeid(length) {
+                 var result           = '';
+                 var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                 var charactersLength = characters.length;
+                 for ( var i = 0; i < length; i++ ) {
+                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                 }
+                console.log(result);
+                 return result;
+              }
+            
+              Array.from(document.getElementsByClassName("hash")).forEach(
+                  function(element, index, array) {
+                      console.log("array");
+                      element.href += makeid(7);
+                  }
+              );
+            
+             }
+        </script>
     </body>
 </html>
