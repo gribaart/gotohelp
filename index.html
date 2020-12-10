@@ -286,7 +286,7 @@
         <div class="row m-2 mt-3 text-center">
             <h2>Оставайтесь с нами</h2>
         </div>
-        <div id="meet"></div>
+        <div id="meet"class="container text-center"></div>
 
         <!-- Example row of columns -->
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true" width="100%" height="970em" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -308,33 +308,28 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                             console.log("load");
-            const domain = 'meet.jit.si';
-                const options = {
-                    roomName: 'gotohelpstream',
-                    width: 700,
-                    height: 700,
-                    parentNode: document.getElementById('meet')
-                };
-                const api = new JitsiMeetExternalAPI(domain, options);  
-              
-            function makeid(length) {
-                 var result           = '';
-                 var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                 var charactersLength = characters.length;
-                 for ( var i = 0; i < length; i++ ) {
-                    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                 }
-                console.log(result);
-                 return result;
-              }
-            
-              Array.from(document.getElementsByClassName("hash")).forEach(
-                  function(element, index, array) {
-                      console.log("array");
-                      element.href += makeid(7);
+                const domain = 'meet.jit.si';
+                    const options = {
+                        roomName: 'gotohelpstream',
+                        parentNode: document.getElementById('meet')
+                    };
+                    const api = new JitsiMeetExternalAPI(domain, options);  
+
+                function makeid(length) {
+                     var result           = '';
+                     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                     var charactersLength = characters.length;
+                     for ( var i = 0; i < length; i++ ) {
+                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                     }
+                     return result;
                   }
-              );
+
+                  Array.from(document.getElementsByClassName("hash")).forEach(
+                      function(element, index, array) {
+                          element.href += makeid(7);
+                      }
+                  );
             }, false);
          
         </script>
