@@ -34,6 +34,44 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Группа совершенствования личности</h4>
+        </div>
+        <div id="meet2" class="modal-body" style="height: 950px;"></div>
+        <div class="modal-footer">
+        <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Группа клинической психотерапии</h4>
+        </div>
+        <div id="meet3" class="modal-body" style="height: 950px;"></div>
+        <div class="modal-footer">
+        <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
         
 <!---------------------------------------------------PAGE----------------------------------------------------------------->
         
@@ -120,32 +158,40 @@
                 <h4 class="card-title">Хотите принять участие в групповых занятиях?</h4>
                 <ul class="list-group justify-content-center p-2">
                     <li class="list-group-item list-group-item-info">
-                        Перейдя по одной из кнопок, подключитесь к онлайн встрече или оставьте контакты для уведомления о встрече. Ожидайте подключения к группе, это может занимать до нескольких дней.
+                        Нажав на кнопку "Подключиться", вы переходите в общую тематичекую видео-конференцию, доступную 24/7. Нажав на кнопку "Подписаться", вы переходите на страницу с формой для подачи заявки на участие в еженедельной группе.
                         Групповые встречи проводяться в формате видео-конференций.
                     </li>
                 </ul>
                 <h5 class="card-title">Группа совершенствования личности</h5>
                 <div class="p-1 d-flex">   
-                    <button type="button" id="mymodal" class="btn flex-grow-1 btn-lg btn-info" data-toggle="modal" data-target="#myModal">Подключиться</button>
+                    <button type="button" id="mymodal" class="btn flex-grow-1  btn-info" data-toggle="modal" data-target="#myModal">Подключиться</button>
                 </div>
                 <div class="p-1 d-flex">   
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
                         Подписаться
                     </a>
                 </div>
                             
                 <p>Участники – здоровые личности, стремящиеся с помощью группового опыта лучше познать себя, завязать более тесные отношения с другими людьми, усовершенствовать навыки межличностного общения, найти и устранить препятствия, мешающие реализации своих возможностей. Наиболее характерными видами данного типа групп являются группы встреч и тренинговые группы.</p>
                 
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Решения проблем
+                <h5 class="card-title">Группа решения проблем</h5>
+                <div class="p-1 d-flex">   
+                    <button type="button" id="mymodal2" class="btn flex-grow-1  btn-info" data-toggle="modal2" data-target="#myModal2">Подключиться</button>
+                </div>
+                <div class="p-1 d-flex">   
+                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+                        Подписаться
                     </a>
                 </div>
                 <p>Участники – люди, имеющие жизненные и личностные трудности. Такие группы обычно организуются в определенных учреждениях (школы, центры занятости, предприятия, центры психологического консультирования).</p>
 
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Клиническая психотерапия
+                <h5 class="card-title">Группа клинической психотерапии</h5>
+                <div class="p-1 d-flex">   
+                    <button type="button" id="mymodal3" class="btn flex-grow-1  btn-info" data-toggle="modal3" data-target="#myModal3">Подключиться</button>
+                </div>
+                <div class="p-1 d-flex">   
+                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+                        Подписаться
                     </a>
                 </div>
                 <p>Участники – люди с различными психическими расстройствами, проявляющимися в поведении и эмоциональной сфере. Группы подразделяются на группы решения психологических проблем, группы изменения поведения и обучения (например, работа со страдающими ожирением, алкоголизмом, нервной анорексией, булимией, инфарктом миокарда, диабетом и т.д.), группы реабилитации, повышения социальной адаптации хронических психиатрических пациентов.</p>
@@ -334,16 +380,8 @@
         <!-- Option 1: Bootstrap Bundle with Popper.js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
         <script>
-            
-            document.getElementById("mymodal").addEventListener('click', function() {
-                const domain = 'meet.jit.si';
-                    const options = {
-                        roomName: 'gotohelpstream',
-                        parentNode: document.getElementById('meet')
-                    };
-                    const api = new JitsiMeetExternalAPI(domain, options);  
-
-                function makeid(length) {
+            document.onload = function(){
+                  function makeid(length) {
                      var result           = '';
                      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
                      var charactersLength = characters.length;
@@ -351,13 +389,38 @@
                         result += characters.charAt(Math.floor(Math.random() * charactersLength));
                      }
                      return result;
-                  }
-
+                  }   
                   Array.from(document.getElementsByClassName("hash")).forEach(
                       function(element, index, array) {
                           element.href += makeid(7);
                       }
                   );
+            }            
+            document.getElementById("mymodal").addEventListener('click', function() {
+                const domain = 'meet.jit.si';
+                    const options = {
+                        roomName: 'gotohelpstream',
+                        parentNode: document.getElementById('meet')
+                    };
+                    const api = new JitsiMeetExternalAPI(domain, options);  
+            }, false);
+            
+            document.getElementById("mymodal2").addEventListener('click', function() {
+                const domain = 'meet.jit.si';
+                    const options = {
+                        roomName: 'gotohelpstream2',
+                        parentNode: document.getElementById('meet2')
+                    };
+                    const api = new JitsiMeetExternalAPI(domain, options);  
+            }, false);
+            
+            document.getElementById("mymodal3).addEventListener('click', function() {
+                const domain = 'meet.jit.si';
+                    const options = {
+                        roomName: 'gotohelpstream3',
+                        parentNode: document.getElementById('meet3')
+                    };
+                    const api = new JitsiMeetExternalAPI(domain, options);  
             }, false);
          
         </script>
