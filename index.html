@@ -1,431 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous" />
-        <link rel="shortcut icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/favicon.ico?alt=media&token=108b0128-31cd-443d-87c2-6b75bfe547e2">
-        <script src='https://meet.jit.si/external_api.js'></script>
-        <title>GotoHelp.eu</title>
-    </head>
-    <body style="max-width: 800px; margin: auto;">
-        
-<!---------------------------------------------------MODAL----------------------------------------------------------------->
-        
-<div class="container">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Группа совершенствования личности</h4>
-        </div>
-        <div id="meet" class="modal-body" style="height: 950px;"></div>
-        <div class="modal-footer">
-        <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<div class="container">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal2" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Группа совершенствования личности</h4>
-        </div>
-        <div id="meet2" class="modal-body" style="height: 950px;"></div>
-        <div class="modal-footer">
-        <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<div class="container">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal3" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Группа клинической психотерапии</h4>
-        </div>
-        <div id="meet3" class="modal-body" style="height: 950px;"></div>
-        <div class="modal-footer">
-        <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-        
-<!---------------------------------------------------PAGE----------------------------------------------------------------->
-        
-        <ul class="nav justify-content-center mt-3" style="align-items: flex-start;">
-            <img src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
-        </ul>
-        <div class="row m-2 text-center">
-                <h2 style="color: #0059ff;">Теория</h2>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous" />
+      <link rel="shortcut icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/favicon.ico?alt=media&token=108b0128-31cd-443d-87c2-6b75bfe547e2">
+      <script src='https://meet.jit.si/external_api.js'></script>
+      <title>GotoHelp.eu</title>
+   </head>
+   <body style="max-width: 800px; margin: auto;">
+      <!---------------------------------------------------MODAL----------------------------------------------------------------->
+      <!-- Button trigger modal -->
+      <div class="container">
+         <!-- Modal -->
+         <div class="modal fade" id="teamModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="teamModalLongTitle">Специалисты проекта GotoHelp</h5>
+                  </div>
+                  <div class="modal-body">
+                     <div class="m-2 mt-3">
+                        <div class="row text-center">
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/juli.jpeg?alt=media&token=44977a39-fc4f-436b-a904-12bc4fdfb922"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Юлия Логвиненко</h4>
+                                    <p class="card-text">
+                                       Клинический психолог<br/>
+                                       Telegram <b>@jullog</b><br/>
+                                       Skype <b>j.logvinenko</b><br/>
+                                       Viber <b>+375336861816</b>
+                                    </p>
+                                    <a target="_top" href="https://www.instagram.com/psychologistjulia/" class="btn btn-link">Instagram</a>
+                                    <a target="_top" href="https://www.linkedin.com/in/jullog/" class="btn btn-link">LinkedIn</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5287390709344743240.jpg?alt=media&token=97" alt="Card image" />
+                                    <h4 class="card-title">Ольга Капица</h4>
+                                    <p class="card-text">Психолог, клиент-центрированный терапевт</p>
+                                    <p class="card-text">Telegram<b>@olga_kapitsa</b></p>
+                                    <a target="_top" href="https://www.instagram.com/olga.kapitsa/" class="btn btn-link">Instagram</a>
+                                    <a target="_top" href="https://www.instagram.com/sny.dnipro/" class="btn btn-link">Blog</a>
+                                    <a target="_top" href="http://www.linkedin.com/in/olga-kapitsa/" class="btn btn-link">LinkedIn</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/psylogo.jpg?alt=media&token=5e0ba839-8bc9-42c8-9741-fe722e8ae345" alt="Card image" />
+                                    <h4 class="card-title">Инга Носикова</h4>
+                                    <p class="card-text">Психолог, гештальт терапевт</p>
+                                    <p class="card-text">Telegram, Whatsup, Viber<b>+375296274395</b></p>
+                                    <a target="_top" href="https://www.facebook.com/photo?fbid=4695687327138202&set=a.441113162595661" class="btn btn-link">Facebook</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/spita.jpg?alt=media&token=294a84e1-4a1e-4c15-b40a-06a817c21675"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Татьяна Шпита</h4>
+                                    <p class="card-text">Интегративный психолог<br/>Telegram <b>+79514576004 </b></p>
+                                    <a target="_top" href="https://www.instagram.com/tatyana_shpita/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5289860388554387816.jpg?alt=media&token=c6330035-1c41-4136-bc1f-9208fe43b633"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Екатерина Лукошкина</h4>
+                                    <p class="card-text">Клинический психолог <br/> Telegram <b>+79117651752 </b></p>
+                                    <a target="_top" href="https://www.instagram.com/katyaluu/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5301295300893323969.jpg?alt=media&token=efd9ff78-4cc2-4c4f-b61f-2a991d0766f1"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Андрей Воротынский</h4>
+                                    <p class="card-text">Психолог <br> Телефон <b>+375292959498</b> <br/> Telegram <b>@psy_vorotynskij </b></p>
+                                    <a target="_top" href="https://www.instagram.com/psy_vorotynskij/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/ava1.jpg?alt=media&token=190d2e0f-fe71-4974-bcb0-34386e0ed423"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Анна Пинаева</h4>
+                                    <p class="card-text">Психолог <br/> Telegram <b>@anna_pinaeva </b><br/> Viber <b> +79520578101 </b></p>
+                                    <a target="_top" href="https://instagram.com/sladkaya_annn/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/arttera.jpg?alt=media&token=cc4c1e5a-3756-4314-8f44-1d7b1d977736"
+                                       alt="Card image"
+                                       /> 
+                                    <h4 class="card-title">Анна Кегелес</h4>
+                                    <p class="card-text">Арт-терапевт, cпециализация-агрессия <br/> Telegram <b>@Akegeles </b><br/> Viber <b> +79520578101 </b></p>
+                                    <a target="_top" href="https://instagram.com/aaaaart_therapy/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/ava2.jpg?alt=media&token=e8ce7506-f786-4fd5-8c96-4e40bbbb2122"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Егорова Юлия</h4>
+                                    <p class="card-text">Психолог-коуч <br/> Telegram <b>@Sinful_Woman </b></p>
+                                    <a target="_top" href="https://instagram.com/iuliiaegorova2005/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                           <!--Grid column-->
+                           <div class="col-md-6 mb-4">
+                              <div class="card">
+                                 <div class="card-body">
+                                    <img
+                                       style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
+                                       alt="100x100"
+                                       src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo_2021-01-24_21-13-04.jpg?alt=media&token=80a7909e-d3be-4d07-95a6-1ca646cda303"
+                                       alt="Card image"
+                                       />
+                                    <h4 class="card-title">Татьяна Русак</h4>
+                                    <p class="card-text">Психолог, трансформационный коуч, вторая ступень гештальт терапии<br/> Telegram <b>@tanyarusak </b></p>
+                                    <a target="_top" href="https://instagram.com/rusak.tatsiana/" class="btn btn-link">Instagram</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                     </div>
+                  </div>
+                  <div class="modal-footer d-grid gap-2">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть список</button>
+                  </div>
+               </div>
+            </div>
          </div>
-        <div class="card m-2">
-            <div class="card-header">
-                Что такое <b>Gotohelp.eu</b>?
+      </div>
+      <div class="container">
+         <div class="modal hide fade" id="myHelloModal">
+            <div class="modal-header">
+               <a class="close" data-dismiss="modal">×</a>
+               <h3>Обращение от команды GotoHelp</h3>
             </div>
-            <div class="card-body">
-                <h5 class="card-title" style="color: #0059ff;">Служба экстренной психологической помощи</h5>
-                <p class="card-text"><b>Горячая видео-линия с психологом, созданая для оказания помощи жертвам насилия в Беларуси, доступная на любых устройствах без установки.</b> </p>
-                <p class="card-text">Платформа соединяет психолога и нуждающегося в экстренной психологической помощи "здесь и сейчас".</p>
-                <p class="card-text">Это добровольная инициатива граждан стран СНГ и Евросоюза с психологическим образованием и опытом оказания экстренной психологической помощи в чрезвычайных ситуациях.</p>
+            <div class="modal-body">
+               <p>Используйте экстренный вызов специалиста лишь в случае реальной необходимости экстренной психологической помощи.</p>
             </div>
-        </div>
-
-        <div class="row m-2 mt-3 text-center">
-            <h2>Практика</h2>
-        </div>
-
-        <div class="card m-2 mt-3">
-            <div class="card-header">
-                <b>Экстренный вызов специалиста</b>
+            <div class="modal-footer">
+               <a href="#" class="btn btn-primary">Хорошо</a>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Хотите получить помощь здесь и сейчас?</h5>
-                <ul class="list-group justify-content-center p-2">
-                    <li class="list-group-item"><b>Шаг 1:</b> Определите, что с вами произошло.</li>
-                    <li class="list-group-item list-group-item-info"><b>Шаг 2:</b> Нажмите на соответствующую кнопку в секции "Получить помощь", ожидайте запуска видео-конференции в вашем брузере.</li>
-                    <li class="list-group-item list-group-item-success"><b>Шаг 3:</b> В браузере нажмите на кнопку "Launch in web". Разрешите видео-конференции использовать микрофон и видео-камеру.</li>
-                    <li class="list-group-item list-group-item-warning">
-                        Ожидайте подключения психолога, это может занимать до 15 минут.
-                    </li>
-                    <li class="list-group-item list-group-item-danger">
-                        <span><b>Если специалист не отвечает:</b></span> <a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true">оставьте свои контакты для связи</a> или
-                        воспользуйтесь приложением для самостоятельного выхода из панического состояния <a target="_top" href="https://apps.apple.com/ua/app/%D0%B0%D0%BD%D1%82%D0%B8%D0%BF%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0/id1128440150?l=ru">для iOS</a> или
-                        <a target="_top" href="https://play.google.com/store/apps/details?id=com.ikp.antipaniclite&hl=en">Android.</a>
-                    </li>
-                </ul>
-                <div class="p-1 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_PANIC_ATAC_">
-                        Паническая атака
-                    </a>
-                </div>
-
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SIZO_">Вышел/ла из СИЗО</a>
-                </div>
-
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_NASILI_">Пережил/а насилие</a>
-                </div>
-
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SVIDETEL_">
-                        Стал/а свидетелем насилия
-                    </a>
-                </div>
-
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_TRAVMA_">
-                        Получил/а физическую травму
-                    </a>
-                </div>
-
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_RODSTVENNIK_">
-                        Родственник в СИЗО/без вести/погиб
-                    </a>
-                </div>
+         </div>
+      </div>
+      <div class="container">
+         <!-- Modal -->
+         <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title">Группа совершенствования личности</h4>
+                  </div>
+                  <div id="meet" class="modal-body" style="height: 950px;"></div>
+                  <div class="modal-footer">
+                     <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
+                  </div>
+               </div>
             </div>
-        </div>
-
-        <div class="card m-2 mt-3">
-            <div class="card-header">
-                <b>Группы взаимопомощи и групповой психотерапии</b>
+         </div>
+      </div>
+      <div class="container">
+         <!-- Modal -->
+         <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title">Группа совершенствования личности</h4>
+                  </div>
+                  <div id="meet2" class="modal-body" style="height: 950px;"></div>
+                  <div class="modal-footer">
+                     <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
+                  </div>
+               </div>
             </div>
-            <div class="card-body">
-                <h4 class="card-title">Хотите принять участие в групповых занятиях?</h4>
-                <ul class="list-group justify-content-center p-2">
-                    <li class="list-group-item list-group-item-info">
-                        Нажав на кнопку "Подключиться", вы переходите в общую тематичекую видео-конференцию, доступную 24/7. Нажав на кнопку "Подписаться", вы переходите на страницу с формой для подачи заявки на участие в еженедельной группе.
-                        Групповые встречи проводяться в формате видео-конференций.
-                    </li>
-                </ul>
-                <h5 class="card-title">Группа совершенствования личности</h5>
-                <div class="p-1 d-flex">   
-                    <button type="button" id="mymodal" class="btn flex-grow-1  btn-info" data-toggle="modal" data-target="#myModal">Подключиться</button>
-                </div>
-                <div class="p-1 d-flex">   
-                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Подписаться
-                    </a>
-                </div>
-                            
-                <p>Участники – здоровые личности, стремящиеся с помощью группового опыта лучше познать себя, завязать более тесные отношения с другими людьми, усовершенствовать навыки межличностного общения, найти и устранить препятствия, мешающие реализации своих возможностей. Наиболее характерными видами данного типа групп являются группы встреч и тренинговые группы.</p>
-                
-                <h5 class="card-title">Группа решения проблем</h5>
-                <div class="p-1 d-flex">   
-                    <button type="button" id="mymodal2" class="btn flex-grow-1  btn-info" data-toggle="modal2" data-target="#myModal2">Подключиться</button>
-                </div>
-                <div class="p-1 d-flex">   
-                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Подписаться
-                    </a>
-                </div>
-                <p>Участники – люди, имеющие жизненные и личностные трудности. Такие группы обычно организуются в определенных учреждениях (школы, центры занятости, предприятия, центры психологического консультирования).</p>
-
-                <h5 class="card-title">Группа клинической психотерапии</h5>
-                <div class="p-1 d-flex">   
-                    <button type="button" id="mymodal3" class="btn flex-grow-1  btn-info" data-toggle="modal3" data-target="#myModal3">Подключиться</button>
-                </div>
-                <div class="p-1 d-flex">   
-                    <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
-                        Подписаться
-                    </a>
-                </div>
-                <p>Участники – люди с различными психическими расстройствами, проявляющимися в поведении и эмоциональной сфере. Группы подразделяются на группы решения психологических проблем, группы изменения поведения и обучения (например, работа со страдающими ожирением, алкоголизмом, нервной анорексией, булимией, инфарктом миокарда, диабетом и т.д.), группы реабилитации, повышения социальной адаптации хронических психиатрических пациентов.</p>
+         </div>
+      </div>
+      <div class="container">
+         <!-- Modal -->
+         <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+               <!-- Modal content-->
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h4 class="modal-title">Группа клинической психотерапии</h4>
+                  </div>
+                  <div id="meet3" class="modal-body" style="height: 950px;"></div>
+                  <div class="modal-footer">
+                     <a type="button" class="btn btn-secondary" href="#" onclick="window.location.reload(true);">Закрыть</a>
+                  </div>
+               </div>
             </div>
-        </div>
-
-        <div class="card m-2 mt-3">
-            <div class="card-header">
-                <b>Психологическая грамотность</b>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Хотите принять участие в вебинарах на тему психологии?</h5>
-                <ul class="list-group justify-content-center p-2">
-                    <li class="list-group-item list-group-item-success">
-                        Перейдите по одной из кнопок и заполните форму участника. Ожидайте добавления в группу мероприятия или ссылку на трансляцию по почте, это может занимать до нескольких дней.
-                        Лекции и воркшопы проводяться в формате видео-конференций.
-                    </li>
-                </ul>
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
-                        Иерархия семейных систем
-                    </a>
-                </div>
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
-                        Личные границы и насилие
-                    </a>
-                </div>
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
-                        Становление и путь матери
-                    </a>
-                </div>
-                <div class="p-2 d-flex">
-                    <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
-                        Транзактный анализ
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row m-2 mt-3 text-center">
-            <h2>Наши специалисты</h2>
-        </div>
-
-        <div class="m-2 mt-3">
-            <div class="row text-center">
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img
-                                style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
-                                alt="100x100"
-                                src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/juli.jpeg?alt=media&token=44977a39-fc4f-436b-a904-12bc4fdfb922"
-                                alt="Card image"
-                            />
-                            <h4 class="card-title">Юлия Логвиненко</h4>
-                            <p class="card-text">
-                                Клинический психолог<br/>
-                                Telegram <b>@jullog</b><br/>
-                                Skype <b>j.logvinenko</b><br/>
-                                Viber <b>+375336861816</b>
-                            </p>
-
-                            <a target="_top" href="https://www.instagram.com/psychologistjulia/" class="btn btn-link">Instagram</a>
-                            <a target="_top" href="https://www.linkedin.com/in/jullog/" class="btn btn-link">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5287390709344743240.jpg?alt=media&token=97" alt="Card image" />
-                            <h4 class="card-title">Ольга Капица</h4>
-                            <p class="card-text">Психолог, клиент-центрированный терапевт</p>
-                            <p class="card-text">Telegram<b>@olga_kapitsa</b></p>
-                            <a target="_top" href="https://www.instagram.com/olga.kapitsa/" class="btn btn-link">Instagram</a>
-                            <a target="_top" href="https://www.instagram.com/sny.dnipro/" class="btn btn-link">Blog</a>
-                            <a target="_top" href="http://www.linkedin.com/in/olga-kapitsa/" class="btn btn-link">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img
-                                style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
-                                alt="100x100"
-                                src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5289860388554387816.jpg?alt=media&token=c6330035-1c41-4136-bc1f-9208fe43b633"
-                                alt="Card image"
-                            />
-                            <h4 class="card-title">Екатерина Лукошкина</h4>
-                            <p class="card-text">Клинический психолог <br/> Telegram <b>+79117651752 </b></p>
-                            <a target="_top" href="https://www.instagram.com/katyaluu/" class="btn btn-link">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                 <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img
-                                style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
-                                alt="100x100"
-                                src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5301295300893323969.jpg?alt=media&token=efd9ff78-4cc2-4c4f-b61f-2a991d0766f1"
-                                alt="Card image"
-                            />
-                            <h4 class="card-title">Андрей Воротынский</h4>
-                            <p class="card-text">Психолог <br> Телефон <b>+375292959498</b> <br/> Telegram <b>@psy_vorotynskij </b></p>
-                            <a target="_top" href="https://www.instagram.com/psy_vorotynskij/" class="btn btn-link">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-            <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img
-                                style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
-                                alt="100x100"
-                                src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/ava1.jpg?alt=media&token=190d2e0f-fe71-4974-bcb0-34386e0ed423"
-                                alt="Card image"
-                            />
-                            <h4 class="card-title">Анна Пинаева</h4>
-                            <p class="card-text">Психолог <br/> Telegram <b>@anna_pinaeva </b><br/> Viber <b> +79520578101 </b></p>
-                            <a target="_top" href="https://instagram.com/sladkaya_annn/" class="btn btn-link">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-
-            <!--Grid column-->
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img
-                                style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
-                                alt="100x100"
-                                src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/ava2.jpg?alt=media&token=e8ce7506-f786-4fd5-8c96-4e40bbbb2122"
-                                alt="Card image"
-                            />
-                            <h4 class="card-title">Егорова Юлия</h4> 
-                            <p class="card-text">Психолог-коуч <br/> Telegram <b>@Sinful_Woman </b></p>
-                            <a target="_top" href="https://instagram.com/iuliiaegorova2005/" class="btn btn-link">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid column-->
-                
-            </div>
-            <!--Grid row-->
-        </div>
-
-        <div class="row m-2 mt-3 text-center">
-            <h2>Оставайтесь с нами</h2>
-        </div>
-        
-
-        <!-- Example row of columns -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true" width="100%" height="970em" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-        <!-- /container -->
-        <footer class="footer">
+         </div>
+      </div>
+      <!---------------------------------------------------PAGE----------------------------------------------------------------->
+      <ul class="nav justify-content-center mt-3" style="align-items: flex-start;">
+         <img src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
+      </ul>
+      <div class="row m-2 text-center">
+         <h2 style="color: #0059ff;">Теория</h2>
+      </div>
+      <div class="card m-2">
+         <div class="card-header">
+            Что такое <b>Gotohelp.eu</b>?
+         </div>
+         <div class="card-body">
+            <h5 class="card-title" style="color: #0059ff;">Служба экстренной психологической помощи</h5>
+            <p class="card-text"><b>Горячая видео-линия с психологом, созданая для оказания помощи жертвам насилия в России и Беларуси, доступная на любых устройствах без установки.</b> </p>
+            <p class="card-text">Платформа соединяет психолога и нуждающегося в экстренной психологической помощи "здесь и сейчас".</p>
+            <p class="card-text">Это добровольная инициатива граждан стран СНГ и Евросоюза с психологическим образованием и опытом оказания экстренной психологической помощи в чрезвычайных ситуациях.</p>
+         </div>
+         <div class="card-footer d-grid gap-2">
+            <button type="button" class="btn-lg btn-block btn-primary" data-toggle="modal" data-target="#teamModalLong">
+            Подробнее о команде GotoHelp
+            </button>
             <div class="container text-center">
-                <span class="text-muted">Помочь проекту на <a class="" target="_top" href="https://www.patreon.com/gotohelp">Patreon</a></span>
+            <span class="text-muted">Помочь проекту на <a class="" target="_top" href="https://www.patreon.com/gotohelp">Patreon</a></span>
+         </div>
+         </div>
+      </div>
+      <div class="row m-2 mt-3 text-center">
+         <h2>Практика</h2>
+      </div>
+      <div class="card m-2 mt-3">
+         <div class="card-header">
+            <b>Экстренный вызов специалиста</b>
+         </div>
+         <div class="card-body">
+            <h4 class="card-title">Нуждаетесь в экстренной психологической помощи?</h4>
+            <p class="text-danger">Просьба использовать GotoHelp лишь в случае реальной необходимости экстренной помощи пострадавшему.</p>
+            <ul class="list-group justify-content-center p-2">
+               <li class="list-group-item"><b>Шаг 1:</b> Определите, что с вами произошло.</li>
+               <li class="list-group-item list-group-item-info"><b>Шаг 2:</b> Нажмите на соответствующую кнопку в секции "Получить помощь", ожидайте запуска видео-конференции в вашем брузере.</li>
+               <li class="list-group-item list-group-item-success"><b>Шаг 3:</b> В браузере нажмите на кнопку "Launch in web". Разрешите видео-конференции использовать микрофон и видео-камеру.</li>
+               <li class="list-group-item list-group-item-warning">
+                  Ожидайте подключения психолога, это может занимать до 15 минут.
+               </li>
+               <li class="list-group-item list-group-item-danger">
+                  <span><b>Если специалист не отвечает:</b></span> <a target="_top" href="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true">оставьте свои контакты для связи</a> или
+                  воспользуйтесь приложением для самостоятельного выхода из панического состояния <a target="_top" href="https://apps.apple.com/ua/app/%D0%B0%D0%BD%D1%82%D0%B8%D0%BF%D0%B0%D0%BD%D0%B8%D0%BA%D0%B0/id1128440150?l=ru">для iOS</a> или
+                  <a target="_top" href="https://play.google.com/store/apps/details?id=com.ikp.antipaniclite&hl=en">Android.</a>
+               </li>
+            </ul>
+            <div class="p-1 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_PANIC_ATAC_">
+               Паническая атака
+               </a>
             </div>
-            <div class="container text-center">
-                <span class="text-muted">При поддержке <a class="" target="_top" href="https://t.me/HelpBelarus2020">HelpBelarus2020</a></span>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SIZO_">Вышел/ла из СИЗО</a>
             </div>
-            <div class="container text-center">
-                <span class="text-muted">Автор проекта <a class="" target="_top" href="https://www.linkedin.com/in/artem-gribanov-6b2246121/">GribArt</a></span>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_NASILI_">Пережил/а насилие</a>
             </div>
-            <div class="container text-center">
-                <span class="text-muted">Проектный <a class="" target="_top" href="https://github.com/gribaart/gotohelp">Github</a></span>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SVIDETEL_">
+               Стал/а свидетелем насилия
+               </a>
             </div>
-        </footer>
-
-        <!-- Option 1: Bootstrap Bundle with Popper.js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
-        <script>
-            window.onload = function(){
-                  function makeid(length) {
-                     var result           = '';
-                     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                     var charactersLength = characters.length;
-                     for ( var i = 0; i < length; i++ ) {
-                        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                     }
-                     return result;
-                  }   
-                  Array.from(document.getElementsByClassName("hash")).forEach(
-                      function(element, index, array) {
-                          element.href += makeid(7);
-                      }
-                  );
-            }            
-            document.getElementById("mymodal").addEventListener('click', function() {
-                const domain = 'meet.jit.si';
-                    const options = {
-                        roomName: 'gotohelpstream',
-                        parentNode: document.getElementById('meet')
-                    };
-                    const api = new JitsiMeetExternalAPI(domain, options);  
-            }, false);
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_TRAVMA_">
+               Получил/а физическую травму
+               </a>
+            </div>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_RODSTVENNIK_">
+               Родственник в СИЗО/без вести/погиб
+               </a>
+            </div>
+            <h4 class="card-title">Хотите записаться на консультацию в удобное для вас время?</h4>
+            <!-- Example row of columns -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true" width="100%" height="1250em" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+         </div>
+      </div>
+      <div class="card m-2 mt-3">
+         <div class="card-header">
+            <b>Группы взаимопомощи и групповой психотерапии</b>
+         </div>
+         <div class="card-body">
+            <h4 class="card-title">Хотите принять участие в групповых занятиях?</h4>
+            <ul class="list-group justify-content-center p-2">
+               <li class="list-group-item list-group-item-info">
+                  Нажав на кнопку "Подключиться", вы переходите в общую тематичекую видео-конференцию, доступную 24/7. Нажав на кнопку "Подписаться", вы переходите на страницу с формой для подачи заявки на участие в еженедельной группе.
+                  Групповые встречи проводяться в формате видео-конференций.
+               </li>
+            </ul>
+            <h5 class="card-title">Группа совершенствования личности</h5>
+            <div class="p-1 d-flex">   
+               <button type="button" id="mymodal" class="btn flex-grow-1  btn-info" data-toggle="modal" data-target="#myModal">Подключиться</button>
+            </div>
+            <div class="p-1 d-flex">   
+               <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+               Подписаться
+               </a>
+            </div>
+            <p>Участники – здоровые личности, стремящиеся с помощью группового опыта лучше познать себя, завязать более тесные отношения с другими людьми, усовершенствовать навыки межличностного общения, найти и устранить препятствия, мешающие реализации своих возможностей. Наиболее характерными видами данного типа групп являются группы встреч и тренинговые группы.</p>
+            <h5 class="card-title">Группа решения проблем</h5>
+            <div class="p-1 d-flex">   
+               <button type="button" id="mymodal2" class="btn flex-grow-1  btn-info" data-toggle="modal2" data-target="#myModal2">Подключиться</button>
+            </div>
+            <div class="p-1 d-flex">   
+               <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+               Подписаться
+               </a>
+            </div>
+            <p>Участники – люди, имеющие жизненные и личностные трудности. Такие группы обычно организуются в определенных учреждениях (школы, центры занятости, предприятия, центры психологического консультирования).</p>
+            <h5 class="card-title">Группа клинической психотерапии</h5>
+            <div class="p-1 d-flex">   
+               <button type="button" id="mymodal3" class="btn flex-grow-1  btn-info" data-toggle="modal3" data-target="#myModal3">Подключиться</button>
+            </div>
+            <div class="p-1 d-flex">   
+               <a type="button" class="btn flex-grow-1 btn-info" target="_top" href="https://forms.gle/CJxxGos3rhV2xnLB8">
+               Подписаться
+               </a>
+            </div>
+            <p>Участники – люди с различными психическими расстройствами, проявляющимися в поведении и эмоциональной сфере. Группы подразделяются на группы решения психологических проблем, группы изменения поведения и обучения (например, работа со страдающими ожирением, алкоголизмом, нервной анорексией, булимией, инфарктом миокарда, диабетом и т.д.), группы реабилитации, повышения социальной адаптации хронических психиатрических пациентов.</p>
+         </div>
+      </div>
+      <div class="card m-2 mt-3">
+         <div class="card-header">
+            <b>Психологическая грамотность</b>
+         </div>
+         <div class="card-body">
+            <h5 class="card-title">Хотите принять участие в вебинарах на тему психологии?</h5>
+            <ul class="list-group justify-content-center p-2">
+               <li class="list-group-item list-group-item-success">
+                  Перейдите по одной из кнопок и заполните форму участника. Ожидайте добавления в группу мероприятия или ссылку на трансляцию по почте, это может занимать до нескольких дней.
+                  Лекции и воркшопы проводяться в формате видео-конференций.
+               </li>
+            </ul>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
+               Иерархия семейных систем
+               </a>
+            </div>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
+               Личные границы и насилие
+               </a>
+            </div>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
+               Становление и путь матери
+               </a>
+            </div>
+            <div class="p-2 d-flex">
+               <a type="button" class="btn flex-grow-1 btn-lg btn-success" target="_top" href="https://forms.gle/q5bTY7rN4gdvoaJN6">
+               Транзактный анализ
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- /container -->
+      <footer class="footer">
+         <div class="container text-center">
+            <span class="text-muted">Помочь проекту на <a class="" target="_top" href="https://www.patreon.com/gotohelp">Patreon</a></span>
+         </div>
+         <div class="container text-center">
+            <span class="text-muted">При поддержке <a class="" target="_top" href="https://t.me/HelpBelarus2020">HelpBelarus2020</a></span>
+         </div>
+         <div class="container text-center">
+            <span class="text-muted">Автор проекта <a class="" target="_top" href="https://www.linkedin.com/in/artem-gribanov-6b2246121/">GribArt</a></span>
+         </div>
+         <div class="container text-center">
+            <span class="text-muted">Проектный <a class="" target="_top" href="https://github.com/gribaart/gotohelp">Github</a></span>
+         </div>
+      </footer>
+      <!-- Option 1: Bootstrap Bundle with Popper.js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+      <script>
+         $(window).on('load', function() {
             
-            document.getElementById("mymodal2").addEventListener('click', function() {
-                const domain = 'meet.jit.si';
-                    const options = {
-                        roomName: 'gotohelpstream2',
-                        parentNode: document.getElementById('meet2')
-                    };
-                    const api = new JitsiMeetExternalAPI(domain, options);  
-            }, false);
-            
-            document.getElementById("mymodal3").addEventListener('click', function() {
-                const domain = 'meet.jit.si';
-                    const options = {
-                        roomName: 'gotohelpstream3',
-                        parentNode: document.getElementById('meet3')
-                    };
-                    const api = new JitsiMeetExternalAPI(domain, options);  
-            }, false);
-         
-        </script>
-    </body>
+         });
+                 window.onload = function(){
+                       document.getElementById('myHelloModal').modal('show');
+                       function makeid(length) {
+                          var result           = '';
+                          var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                          var charactersLength = characters.length;
+                          for ( var i = 0; i < length; i++ ) {
+                             result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                          }
+                          return result;
+                       }   
+                       Array.from(document.getElementsByClassName("hash")).forEach(
+                           function(element, index, array) {
+                               element.href += makeid(7);
+                           }
+                       );
+                 }            
+                 document.getElementById("mymodal").addEventListener('click', function() {
+                     const domain = 'meet.jit.si';
+                         const options = {
+                             roomName: 'gotohelpstream',
+                             parentNode: document.getElementById('meet')
+                         };
+                         const api = new JitsiMeetExternalAPI(domain, options);  
+                 }, false);
+                 
+                 document.getElementById("mymodal2").addEventListener('click', function() {
+                     const domain = 'meet.jit.si';
+                         const options = {
+                             roomName: 'gotohelpstream2',
+                             parentNode: document.getElementById('meet2')
+                         };
+                         const api = new JitsiMeetExternalAPI(domain, options);  
+                 }, false);
+                 
+                 document.getElementById("mymodal3").addEventListener('click', function() {
+                     const domain = 'meet.jit.si';
+                         const options = {
+                             roomName: 'gotohelpstream3',
+                             parentNode: document.getElementById('meet3')
+                         };
+                         const api = new JitsiMeetExternalAPI(domain, options);  
+                 }, false);
+              
+             
+      </script>
+   </body>
 </html>
