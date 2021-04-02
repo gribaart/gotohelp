@@ -11,7 +11,7 @@
       <script src='https://meet.jit.si/external_api.js'></script>
       <title>GotoHelp.eu</title>
    </head>
-   <body style="max-width: 800px; margin: auto;">
+   <body style="max-width: 800px; margin: auto; background-color:#F0F0F0;">
       <!---------------------------------------------------MODAL----------------------------------------------------------------->
           
        
@@ -68,11 +68,11 @@
          </div>
       </div>
       <!---------------------------------------------------PAGE----------------------------------------------------------------->
-      <ul class="nav justify-content-center mt-3" style="align-items: flex-start;">
+      <ul class="nav justify-content-center m-2 mt-3" style="align-items: flex-start;">
          <img src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
       </ul>
-      <div class="row m-2 text-center">
-         <h2 style="color: #0059ff;">Теория</h2>
+      <div class="row p-2 text-center">
+         <h2 >Теория</h2>
       </div>
       <div class="card m-2">
          <div class="card-header">
@@ -117,30 +117,22 @@
                </li>
             </ul>
             <div class="p-1 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_PANIC_ATAC_">
-               Паническая атака
-               </a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="PANICKA_ATAKA" value="Паническая атака" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SIZO_">Вышел/ла из СИЗО</a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="VYSEL_IS_SIZO" value="Вышел/ла из СИЗО" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_NASILI_">Пережил/а насилие</a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="ZERTVA_NASILI" value="Пережил/а насилие" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_SVIDETEL_">
-               Стал/а свидетелем насилия
-               </a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="SVIDETEL_NASILI" value="Стал/а свидетелем насилия" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_TRAVMA_">
-               Получил/а физическую травму
-               </a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="FIZ_TRAVMA" value="Получил/а физическую травму" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
-               <a type="button" class="btn flex-grow-1 btn-lg btn-primary hash" target="_top" href="https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_RODSTVENNIK_">
-               Родственник в СИЗО/без вести/погиб
-               </a>
+               <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="RODSTVENNIK_BEDA" value="Родственник в СИЗО/без вести/погиб" onclick="relocate_home(this.id)">
             </div>
             <h4 class="card-title m-3">Хотите записаться на консультацию в удобное для вас время?</h4>
             <!-- Example row of columns -->
@@ -423,10 +415,16 @@
       <!-- Option 1: Bootstrap Bundle with Popper.js -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
       <script>
-       
-                 window.onload = function(){
-                 
-                     //   document.getElementById('myHelloModal').modal('show');
+                       window.onload = function(){
+                             alert("Используйте экстренный вызов специалиста лишь в случае реальной необходимости психологической помощи!");
+                       } 
+         
+                        function relocate_home(id){     
+                           var url = "https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_" +  id + "_";
+                           url += makeid(7);
+                           location.href= url
+                        } 
+
                        function makeid(length) {
                           var result           = '';
                           var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -435,40 +433,35 @@
                              result += characters.charAt(Math.floor(Math.random() * charactersLength));
                           }
                           return result;
-                       }   
-                       Array.from(document.getElementsByClassName("hash")).forEach(
-                           function(element, index, array) {
-                               element.href += makeid(7);
-                           }
-                       );
-                       alert("Используйте экстренный вызов специалиста лишь в случае реальной необходимости психологической помощи!");
-                 }            
-                 document.getElementById("mymodal").addEventListener('click', function() {
-                     const domain = 'meet.jit.si';
-                         const options = {
-                             roomName: 'gotohelpstream',
-                             parentNode: document.getElementById('meet')
-                         };
-                         const api = new JitsiMeetExternalAPI(domain, options);  
-                 }, false);
-                 
-                 document.getElementById("mymodal2").addEventListener('click', function() {
-                     const domain = 'meet.jit.si';
-                         const options = {
-                             roomName: 'gotohelpstream2',
-                             parentNode: document.getElementById('meet2')
-                         };
-                         const api = new JitsiMeetExternalAPI(domain, options);  
-                 }, false);
-                 
-                 document.getElementById("mymodal3").addEventListener('click', function() {
-                     const domain = 'meet.jit.si';
-                         const options = {
-                             roomName: 'gotohelpstream3',
-                             parentNode: document.getElementById('meet3')
-                         };
-                         const api = new JitsiMeetExternalAPI(domain, options);  
-                 }, false);
+                       }  
+       
+                            
+                       document.getElementById("mymodal").addEventListener('click', function() {
+                           const domain = 'meet.jit.si';
+                               const options = {
+                                   roomName: 'gotohelpstream',
+                                   parentNode: document.getElementById('meet')
+                               };
+                               const api = new JitsiMeetExternalAPI(domain, options);  
+                       }, false);
+
+                       document.getElementById("mymodal2").addEventListener('click', function() {
+                           const domain = 'meet.jit.si';
+                               const options = {
+                                   roomName: 'gotohelpstream2',
+                                   parentNode: document.getElementById('meet2')
+                               };
+                               const api = new JitsiMeetExternalAPI(domain, options);  
+                       }, false);
+
+                       document.getElementById("mymodal3").addEventListener('click', function() {
+                           const domain = 'meet.jit.si';
+                               const options = {
+                                   roomName: 'gotohelpstream3',
+                                   parentNode: document.getElementById('meet3')
+                               };
+                               const api = new JitsiMeetExternalAPI(domain, options);  
+                       }, false);
               
              
       </script>
