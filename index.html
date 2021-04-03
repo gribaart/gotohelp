@@ -10,12 +10,14 @@
       <link rel="shortcut icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/favicon.ico?alt=media&token=108b0128-31cd-443d-87c2-6b75bfe547e2">
       <script src='https://meet.jit.si/external_api.js'></script>
       <title>GotoHelp.eu</title>
+      <style>
+         .nounderline {
+         text-decoration: none !important
+         }
+      </style>
    </head>
    <body style="max-width: 800px; margin: auto; background-color:#F0F0F0;">
       <!---------------------------------------------------MODAL----------------------------------------------------------------->
-          
-       
-    
       <div class="container">
          <!-- Modal -->
          <div class="modal fade" id="myModal" role="dialog">
@@ -68,13 +70,23 @@
          </div>
       </div>
       <!---------------------------------------------------PAGE----------------------------------------------------------------->
-      <ul class="nav justify-content-center m-2 mt-3" style="align-items: flex-start;">
-         <img src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
+      <ul class="nav rounded shadow justify-content-center m-2 mt-3" style="align-items: flex-start;">
+         <img class="rounded" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/1231.jpg?alt=media&token=7b4a0068-43b3-4c95-966c-820ecd21a8fa" style="width: 100%; height: auto;" alt="..." />            
       </ul>
-      <div class="row p-2 text-center">
-         <h2 >Теория</h2>
+      <div class="alert shadow alert-primary justify-content-center text-center m-2 mt-3" role="alert">
+         Используйте экстренный вызов специалиста лишь в случае реальной необходимости психологической помощи!
       </div>
-      <div class="card m-2">
+      <div class="d-grid m-2 mt-3"> 
+         <a href="#call" class="nounderline btn-lg btn-block btn-primary" style="text-align:center">
+         ВЫЗВАТЬ ПСИХОЛОГА
+         </a>
+      </div>
+      <div class="d-grid m-2 mt-3"> 
+         <a href="#about" class="nounderline btn-lg btn-block btn-primary" style="text-align:center">
+         О ПРОЕКТЕ
+         </a>
+      </div>
+      <div id="about" class="card shadow m-2">
          <div class="card-header">
             Что такое <b>Gotohelp.eu</b>?
          </div>
@@ -84,19 +96,16 @@
             <p class="card-text">Платформа соединяет психолога и нуждающегося в экстренной психологической помощи "здесь и сейчас".</p>
             <p class="card-text">Это добровольная инициатива граждан стран СНГ и Евросоюза с психологическим образованием и опытом оказания экстренной психологической помощи в чрезвычайных ситуациях.</p>
          </div>
-         <div class="card-footer d-grid gap-2"> 
-            <a href="#team" class="btn-lg btn-block btn-primary" style="text-align:center">
+         <div class="card-footer d-grid gap-2">
+            <a href="#team" class="nounderline btn-lg btn-block btn-primary" style="text-align:center">
             Подробнее о команде GotoHelp
             </a>
             <div class="container text-center">
-            <span class="text-muted">Помочь проекту на <a class="" target="_top" href="https://www.patreon.com/gotohelp">Patreon</a></span>
-         </div>
+               <span class="text-muted">Помочь проекту на <a class="" target="_top" href="https://www.patreon.com/gotohelp">Patreon</a></span>
+            </div>
          </div>
       </div>
-      <div class="row m-2 mt-3 text-center">
-         <h2>Практика</h2>
-      </div>
-      <div class="card m-2 mt-3">
+      <div id="call" class="card shadow m-2 mt-3">
          <div class="card-header">
             <b>Экстренный вызов специалиста</b>
          </div>
@@ -116,7 +125,7 @@
                   <a target="_top" href="https://play.google.com/store/apps/details?id=com.ikp.antipaniclite&hl=en">Android.</a>
                </li>
             </ul>
-            <div class="p-1 d-flex">
+            <div class="p-2 d-flex">
                <input type="button" class="btn flex-grow-1 btn-lg btn-primary hash" id="PANICKA_ATAKA" value="Паническая атака" onclick="relocate_home(this.id)">
             </div>
             <div class="p-2 d-flex">
@@ -139,7 +148,6 @@
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc1K3K6GcOvemi5gg7m5TDYq3cIFCcAvxFh-tNBn_jHPRG7gw/viewform?embedded=true" width="100%" height="1300em" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
          </div>
       </div>
-
       <div class="m-2 mt-3">
          <div class="row text-center" id="team">
             <div class="row m-2 mt-3 text-center">
@@ -147,7 +155,7 @@
             </div>
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -170,7 +178,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/photo5287390709344743240.jpg?alt=media&token=97" alt="Card image" />
                      <h4 class="card-title">Ольга Капица</h4>
@@ -185,7 +193,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;" alt="100x100" src="https://firebasestorage.googleapis.com/v0/b/copygeneral-f7c91.appspot.com/o/psylogo.jpg?alt=media&token=5e0ba839-8bc9-42c8-9741-fe722e8ae345" alt="Card image" />
                      <h4 class="card-title">Инга Носикова</h4>
@@ -198,7 +206,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -215,7 +223,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -232,7 +240,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -249,7 +257,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -266,7 +274,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -283,7 +291,7 @@
             <!--Grid column-->
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -297,10 +305,9 @@
                </div>
             </div>
             <!--Grid column-->
-            
             <!--Grid column-->
             <div class="col-md-6 mb-4">
-               <div class="card">
+               <div class="card shadow">
                   <div class="card-body">
                      <img
                         style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%;"
@@ -317,9 +324,7 @@
          </div>
          <!--Grid row-->
       </div>
-
-
-      <div class="card m-2 mt-3">
+      <div class="card shadow m-2 mt-3">
          <div class="card-header">
             <b>Группы взаимопомощи и групповой психотерапии</b>
          </div>
@@ -363,7 +368,7 @@
             <p>Участники – люди с различными психическими расстройствами, проявляющимися в поведении и эмоциональной сфере. Группы подразделяются на группы решения психологических проблем, группы изменения поведения и обучения (например, работа со страдающими ожирением, алкоголизмом, нервной анорексией, булимией, инфарктом миокарда, диабетом и т.д.), группы реабилитации, повышения социальной адаптации хронических психиатрических пациентов.</p>
          </div>
       </div>
-      <div class="card m-2 mt-3">
+      <div class="card shadow m-2 mt-3">
          <div class="card-header">
             <b>Психологическая грамотность</b>
          </div>
@@ -415,55 +420,55 @@
       <!-- Option 1: Bootstrap Bundle with Popper.js -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
       <script>
-                       window.onload = function(){
-                             alert("Используйте экстренный вызов специалиста лишь в случае реальной необходимости психологической помощи!");
-                       } 
+         window.onload = function(){
+               alert("Используйте экстренный вызов специалиста лишь в случае реальной необходимости психологической помощи!");
+         } 
          
-                        function relocate_home(id){     
-                           var url = "https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_" +  id + "_";
-                           url += makeid(7);
-                           location.href= url
-                        } 
-
-                       function makeid(length) {
-                          var result           = '';
-                          var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                          var charactersLength = characters.length;
-                          for ( var i = 0; i < length; i++ ) {
-                             result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                          }
-                          return result;
-                       }  
-       
-                            
-                       document.getElementById("mymodal").addEventListener('click', function() {
-                           const domain = 'meet.jit.si';
-                               const options = {
-                                   roomName: 'gotohelpstream',
-                                   parentNode: document.getElementById('meet')
-                               };
-                               const api = new JitsiMeetExternalAPI(domain, options);  
-                       }, false);
-
-                       document.getElementById("mymodal2").addEventListener('click', function() {
-                           const domain = 'meet.jit.si';
-                               const options = {
-                                   roomName: 'gotohelpstream2',
-                                   parentNode: document.getElementById('meet2')
-                               };
-                               const api = new JitsiMeetExternalAPI(domain, options);  
-                       }, false);
-
-                       document.getElementById("mymodal3").addEventListener('click', function() {
-                           const domain = 'meet.jit.si';
-                               const options = {
-                                   roomName: 'gotohelpstream3',
-                                   parentNode: document.getElementById('meet3')
-                               };
-                               const api = new JitsiMeetExternalAPI(domain, options);  
-                       }, false);
+          function relocate_home(id){     
+             var url = "https://europe-west1-hoteloffice-293914.cloudfunctions.net/forhelp?code=status_" +  id + "_";
+             url += makeid(7);
+             location.href= url
+          } 
+         
+         function makeid(length) {
+            var result           = '';
+            var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for ( var i = 0; i < length; i++ ) {
+               result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+         }  
+         
               
-             
+         document.getElementById("mymodal").addEventListener('click', function() {
+             const domain = 'meet.jit.si';
+                 const options = {
+                     roomName: 'gotohelpstream',
+                     parentNode: document.getElementById('meet')
+                 };
+                 const api = new JitsiMeetExternalAPI(domain, options);  
+         }, false);
+         
+         document.getElementById("mymodal2").addEventListener('click', function() {
+             const domain = 'meet.jit.si';
+                 const options = {
+                     roomName: 'gotohelpstream2',
+                     parentNode: document.getElementById('meet2')
+                 };
+                 const api = new JitsiMeetExternalAPI(domain, options);  
+         }, false);
+         
+         document.getElementById("mymodal3").addEventListener('click', function() {
+             const domain = 'meet.jit.si';
+                 const options = {
+                     roomName: 'gotohelpstream3',
+                     parentNode: document.getElementById('meet3')
+                 };
+                 const api = new JitsiMeetExternalAPI(domain, options);  
+         }, false);
+         
+         
       </script>
    </body>
 </html>
